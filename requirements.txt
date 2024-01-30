@@ -8,3 +8,4 @@ openai
 tiktoken
 docx2txt
 streamlit_chat
+streamlit_extras
