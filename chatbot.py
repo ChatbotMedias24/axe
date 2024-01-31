@@ -90,9 +90,8 @@ with textcontainer:
 st.sidebar.subheader("Suggestions:")
 questions = [
         "Donnez-moi un résumé du rapport ",
-        " Quels sont les principaux défis auxquels le Maroc est confronté suite au séisme d'Al Haouz et à l'organisation de la Coupe du monde de football en 2030 ?",
-        "Quelles sont les grandes réformes recommandées par le rapport pour renforcer les infrastructures et améliorer l'accès aux services?",
-        "Comment le rapport évalue-t-il la capacité du Maroc à relever les défis présentés par la pandémie de Covid-19 et le tremblement de terre d'Al Haouz?"
+        "Quels sont les thèmes ou sujets phares abordés par le rapport ?"
+        
     ]    
  
 load_dotenv(st.secrets["OPENAI_API_KEY"])
