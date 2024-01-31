@@ -90,8 +90,10 @@ with textcontainer:
 st.sidebar.subheader("Suggestions:")
 questions = [
         "Donnez-moi un résumé du rapport ",
-        "Quels sont les thèmes ou sujets phares abordés par le rapport ?"
-        
+        "Quels sont les thèmes ou sujets phares abordés par le rapport ?",
+        "Comment le rapport évalue-t-il l'efficacité des politiques et des programmes en place ?",
+        "Quels défis et opportunités le rapport identifie-t-il pour le pays dans les années à venir ?",
+        "Quelles recommandations globales le rapport propose-t-il pour améliorer la gouvernance et la gestion des ressources publiques ?"
     ]    
  
 load_dotenv(st.secrets["OPENAI_API_KEY"])
