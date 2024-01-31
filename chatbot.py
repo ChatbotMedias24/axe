@@ -83,9 +83,9 @@ st.markdown(
 textcontainer = st.container()
 with textcontainer:
     logo_path = "medi.png"
-    logoo_path = "axee.png"
+    #logoo_path = "axee.png"
     st.sidebar.image(logo_path,width=150)
-    st.sidebar.image(logoo_path,width=150)
+    #st.sidebar.image(logoo_path,width=150)
     
 st.sidebar.subheader("Suggestions:")
 questions = [
