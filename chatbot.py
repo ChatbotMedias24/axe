@@ -130,9 +130,9 @@ def main():
         selected_questions = st.sidebar.radio("****Choisir :****",questions)
     
         if selected_questions:
-           query = st.text_input("*****Posez-vous vos questions ci-dessous:*****", selected_questions)
+           query = st.text_input("*****Posez-vous vos questions ci-dessous :*****", selected_questions)
         else :
-           query = st.text_input("*****Posez-vous vos questions ci-dessous:*****")
+           query = st.text_input("*****Posez-vous vos questions ci-dessous :*****")
         # st.write(query)
  
         if query:
