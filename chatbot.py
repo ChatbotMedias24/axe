@@ -23,7 +23,8 @@ import toml
 import docx2txt
 from langchain.memory.chat_message_histories import StreamlitChatMessageHistory
 from langchain.callbacks.base import BaseCallbackHandler
-
+if 'previous_question' not in st.session_state:
+    st.session_state.previous_question = []
 st.markdown(
     """
     <style>
@@ -126,17 +127,17 @@ def main():
  
         # embeddings = OpenAIEmbeddings()
         # VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
-        
+        st.markdown("**Posez vos questions ci-dessous:**")
+        query_input = st.text_input("")
         selected_questions = st.sidebar.radio("****Choisir :****",questions)
+        if query_input and query_input not in st.session_state.previous_question:
+            query = query_input
+            st.session_state.previous_question.append(query_input)
+        elif selected_questions:
+            query = selected_questions
+        else:
+            query=""
     
-        if selected_questions:
-           st.markdown("**Posez-vous vos questions ci-dessous:**")
-           query = st.text_input("", selected_questions)
-        else :
-           st.markdown("**Posez-vous vos questions ci-dessous:**")
-           query = st.text_input("")
-        # st.write(query)
- 
         if query:
             docs = VectorStore.similarity_search(query=query, k=3)
  
