@@ -127,7 +127,7 @@ def main():
  
         # embeddings = OpenAIEmbeddings()
         # VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
-        st.markdown("**Posez vos questions ci-dessous:**")
+        st.markdown('<p style="margin-bottom: 0;"><h7><b>Posez vos questions ci-dessous:</b></h7></p>', unsafe_allow_html=True)
         query_input = st.text_input("")
         selected_questions = st.sidebar.radio("****Choisir :****",questions)
         if query_input and query_input not in st.session_state.previous_question:
