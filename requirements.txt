@@ -1,11 +1,9 @@
-pip==21.3.1
 langchain==0.0.316
 PyPDF2==3.0.1
 python-dotenv==1.0.0
 streamlit==1.18.1
 faiss-cpu==1.7.4
-streamlit-extras==0.4.0
 openai===0.28.1
-tiktoken==0.1.1
-docx2txt==0.8
-streamlit_chat==0.1.1
+tiktoken
+docx2txt
+streamlit_chat
