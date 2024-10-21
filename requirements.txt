@@ -6,4 +6,4 @@ openai===0.28.1
 tiktoken
 docx2txt
 streamlit_chat
-altair
+altair==4.1.0
