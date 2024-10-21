@@ -7,3 +7,5 @@ tiktoken
 docx2txt
 streamlit_chat
 altair==4.1.0
+faiss-cpu
+
